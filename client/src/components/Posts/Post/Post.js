@@ -27,12 +27,12 @@ const Post = ({post, setCurrentId}) =>{
         </div>
             <Typography className={classes.title} gutterBottom variant="h5" component="h2"> {post.title}</Typography>
         <CardContent>
-        <Typography gutterBottom variant="h5" component="h2"> {post.message}</Typography>
+        <Typography variant="body2" color="textSecondary" component="h2"> {post.message}</Typography>
         </CardContent>
         <CardActions className={classes.cardActions}>
             <Button size="small" color="primary" onClick={() => dispatch(likePost(post._id))}>
             <ThumbUpAltIcon fontSize="small"/>
-            Like
+            &nbsp; Like &nbsp;
             {post.likeCount}
             </Button>
             <Button size="small" color="primary" onClick={() => dispatch(deletePost(post._id))}>
