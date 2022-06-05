@@ -1,3 +1,4 @@
 client/node_modules/.cache
 *.old
 *.pack
+server/.env
